@@ -32,6 +32,11 @@
   display:none !important
 }
 
+/* Removes foward/back buttons */
+#back-button, #forward-button {
+  display: none !important
+}
+
 /* Remove spacer */
 .titlebar-spacer {
   display:none !important
