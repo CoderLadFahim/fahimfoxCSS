@@ -21,19 +21,20 @@
 {:root #nav-bar{padding: 0 5px 0 5px!important; height: calc(var(--NavbarHeightSmall) * 1px) !important} toolbarspring{display: none !important;} #TabsToolbar, #nav-bar{transition: margin-top .25s !important}}
 #nav-bar, #PersonalToolbar{background-color: #0000 !important;background-image: none !important; box-shadow: none !important} #nav-bar{margin-left: 3px;} .tab-background, .tab-stack { min-height: calc(var(--TabsHeight) * 1px) !important}
 
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon, 
+#tabbrowser-tabs:not([noshadowfortests]) .tab-background:is([selected], 
+[multiselected]) {
+  border: 1px solid #00849a;
+}
+
 /* Remove close window button*/
 .titlebar-buttonbox-container{
   display:none !important
 }
 
-/* Removes foward/back buttons */
-#back-button, #forward-button {
-  display: none !important
-}
-
-/* Remove extensions button */
-#unified-extensions-button {
-  display: none !important
+/* Remove spacer */
+.titlebar-spacer {
+  display:none !important
 }
 
 /* Remove icons from urlbar */ 
